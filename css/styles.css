@@ -1,0 +1,38 @@
+.main-page {
+    background-color: #1e1e1e;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+.article-page {
+    background-color: #1e1e1e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Courier New', Courier, monospace;
+    color: grey;
+}
+
+.article-body {
+    border-style:solid;
+    border-color: black;
+    border-radius: 15px;
+    border-width: 2px;
+    margin: 0 auto;
+    width: 75%;
+    color: grey;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+a {
+    color: inherit;
+}
+
+.article-image {
+    margin: 0 auto;
+    display: block;
+}

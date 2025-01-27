@@ -1,0 +1,62 @@
+
+/* File Listing for main page */
+details {
+    display: block;
+}
+
+details summary::before {
+    content: '';
+    background-image: url("../images/folder_close3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin: 5px 0;
+}
+
+summary {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+details::content{
+    text-indent: 10px;
+}
+
+details[open] > summary{ 
+
+    content: '';
+    background-image: url("../images/folder_open2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 5px 0;
+    width: 20px;
+    height: 20px;
+    gap: 25px;
+    text-wrap: nowrap;
+}
+.file-list {
+    border-style:solid;
+    border-color: black;
+    border-radius: 15px;
+    border-width: 2px;
+    margin: 0 auto;
+    width: 75%;
+    color: grey;
+    padding: 0;
+    list-style: none;
+    padding-left: 10px;
+}
+
+li {
+    list-style-type: none;
+    margin-left: -1%;
+    margin-top: -2%;
+}
+
+.item-file {
+    width: 20px;
+    height: auto;
+}
