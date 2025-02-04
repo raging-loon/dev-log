@@ -1,3 +1,15 @@
+@media screen and (max-width: 800px){
+   body {
+        .article-body {
+            width: 90%;
+            padding-left: 5px;
+            padding-right: 5px;
+
+        }
+   }
+}
+
+
 .main-page {
     background-color: #1e1e1e;
     font-family:'Courier New', Courier, monospace;
@@ -40,8 +52,11 @@ a {
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
+    text-wrap:inherit;
 }
 
 th, td {
     padding: 10px;
+    word-break:break-all;
+    overflow-wrap: break-word;
 }
