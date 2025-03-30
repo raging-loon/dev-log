@@ -17,13 +17,11 @@
 }
 
 .article-page {
-    background-color: #1e1e1e;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h1,h2,h3,h4 {
     font-family: 'Courier New', Courier, monospace;
-    color: grey;
 }
 
 .article-body {
@@ -41,7 +39,12 @@ h1,h2,h3,h4 {
 
 
 a {
-    color: inherit;
+    color: #79c0ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .article-image {
@@ -59,4 +62,7 @@ th, td {
     padding: 10px;
     word-break:break-all;
     overflow-wrap: break-word;
+}
+code {
+    color: grey;
 }
