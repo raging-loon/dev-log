@@ -2,19 +2,25 @@
 <html>
     <head>
         <title>Dev Log</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/main-page.css">
+
     </head>
 
     <body class="main-page">
-        <center><h1 style="color: grey;">Development Blog</h1></center>
+        <div class="container-fluid text-center bg-dark p-4">
+            <h1 style="color: grey;">Development Blog</h1>
+
+        </div>
         
-        <div class="file-list">
+        <div class="file-list container-fluid">
             <details>
                 <summary >Malware Development</summary>
                 <ul>
                     <li>
-                        <span><img src="images/file.png" height="25px" width="25px"></span>
+                        <span><img src="images/file.png" class="file-icon"></span>
                         <span >
                             <a href="html/articles/malware-dev/constant-expressions/constant-expressions.html">
                                 Constant Expressions: A Method of Hiding Malicious Data at Compile Time
@@ -22,7 +28,7 @@
                         </span>
                     </li>
                     <li>
-                        <span><img src="images/file.png" height="25px" width="25px"></span>
+                        <span><img src="images/file.png" class="file-icon"></span>
                         <span >
                             <a href="html/articles/malware-dev/wmi-persistence/wmi-persistence.html">
                                 WMI Based Persistence Mechanisms for Malicious C++ Applications 
@@ -30,7 +36,7 @@
                         </span>
                     </li>
                     <li>
-                        <span><img src="images/file.png" height="25px" width="25px"></span>
+                        <span><img src="images/file.png" class="file-icon"></span>
                         <span >
                             <a href=".">
                                 Apophis Ransomware [In Development]
@@ -38,7 +44,7 @@
                         </span>
                     </li>
                     <li>
-                        <span><img src="images/file.png" height="25px" width="25px"></span>
+                        <span><img src="images/file.png" class="file-icon"></span>
                         <span >
                             <a href="html/articles/malware-dev/fn-res/loader.html">
                                 Manual Loading Functions and Libraries for EDR/AV Bypass

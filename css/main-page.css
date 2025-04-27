@@ -11,7 +11,10 @@ details summary::before {
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
-    margin: 5px 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+    /* margin: 5px 0; */
 }
 
 summary {
@@ -25,16 +28,15 @@ details::content{
     text-indent: 10px;
 }
 
-details[open] > summary{ 
-
+details[open] > summary{
     content: '';
     background-image: url("../images/folder_open2.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 5px 0;
     width: 20px;
     height: 20px;
-    gap: 25px;
+    margin-top: 5px;
+    gap:30px;
     text-wrap: nowrap;
 }
 .file-list {
@@ -45,7 +47,6 @@ details[open] > summary{
     margin: 0 auto;
     width: 75%;
     color: grey;
-    padding: 0;
     list-style: none;
     padding-left: 10px;
 }
@@ -53,11 +54,13 @@ details[open] > summary{
 li {
     list-style-type: none;
     margin-left: -1%;
-    margin-top: -2%;
-    margin-bottom: 2%;
 }
 
 .item-file {
     width: 20px;
     height: auto;
+}
+
+.file-icon {
+    width: 20px;
 }
