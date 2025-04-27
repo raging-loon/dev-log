@@ -28,9 +28,15 @@ summary {
     gap:10px;
 }
 
-details::content{
-    text-indent: 10px;
+details[open]::details-content{
+    margin-right: 10px;
 }
+
+.directory-content {
+    margin-left: 2vw;
+}
+
+
 
 details[open] > summary{
     content: '';
@@ -57,7 +63,7 @@ details[open] > summary{
 
 li {
     list-style-type: none;
-    margin-left: -1%;
+    margin-left: -1vw;
 }
 
 .item-file {
