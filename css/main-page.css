@@ -1,57 +1,54 @@
 .main-page {
-    font-family:'Courier New', Courier, monospace;
-    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
 }
 
 /* File Listing for main page */
 details {
     display: block;
+    
 }
 
+/* Icon Styling */
 details summary::before {
     content: '';
-    background-image: url("../images/folder_close3.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin: 5px 10px 0px 0;
+    text-wrap: nowrap;
+}
 
-    /* margin: 5px 0; */
+/* Default (Closed) Icon */
+details:not([open]) summary::before {
+    background-image: url("../images/folder_close3.png");
+}
+
+/* Open State Icon */
+details[open] summary::before {
+    background-image: url("../images/folder_open2.png");
 }
 
 summary {
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap:10px;
-}
-
-details[open]::details-content{
-    margin-right: 10px;
+    gap: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;     
+    user-select: none;
 }
 
 .directory-content {
     margin-left: 2vw;
+        margin-bottom: 0;
+
 }
 
-
-
-details[open] > summary{
-    content: '';
-    background-image: url("../images/folder_open2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px;
-    margin-top: 5px;
-    gap:30px;
-    text-wrap: nowrap;
-}
 .file-list {
-    border-style:solid;
+    border-style: solid;
     border-color: black;
     border-radius: 15px;
     border-width: 2px;
@@ -60,21 +57,19 @@ details[open] > summary{
     list-style: none;
     padding-left: 10px;
 }
-
+ul {
+    margin-bottom: 0;
+}
 li {
     list-style-type: none;
     margin-left: -1vw;
 }
 
-.item-file {
+.item-file, .file-icon {
     width: 20px;
     height: auto;
+    margin-right: 1%;
 }
-
-.file-icon {
-    width: 20px;
-}
-
 
 a {
     color: white;
@@ -84,3 +79,9 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+p {
+    margin-bottom: 0;
+}
+
+

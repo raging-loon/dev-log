@@ -1,0 +1,18 @@
+{
+    "Malware Development": {
+        "base_path": "malware-dev",
+        "files": [
+            {
+                "name": "Constant Expressions: A Method of Hiding Malicious Data at Compile Time",
+                "author": "Conner Macolley",
+                "path": "constant-expressions/constant-expressions.html"
+            }, 
+            {
+                "name": "WMI Based Persistence Mechanisms for Malicious C++ Applications",
+                "author": "Conner Macolley",
+                "path": "wmi-persistence/wmi-persistence.html"
+            }
+        ]
+    }
+    
+}

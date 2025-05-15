@@ -1,0 +1,88 @@
+.main-page {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+/* File Listing for main page */
+details {
+    display: block;
+}
+
+details summary::before {
+    background-position: absolute;
+    content: '';
+    background-image: url("../images/folder_close3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-wrap: nowrap;
+
+    /* margin: 5px 0; */
+}
+
+summary {
+    cursor: pointer;
+    display: flex;
+    gap:10px;
+}
+
+details[open]::details-content{
+    margin-right: 10px;
+}
+
+.directory-content {
+    margin-left: 2vw;
+}
+
+
+
+details[open] > summary{
+    content: '';
+    background-image: url("../images/folder_open2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    gap:30px;
+    text-wrap: nowrap;
+}
+.file-list {
+    border-style:solid;
+    border-color: black;
+    border-radius: 15px;
+    border-width: 2px;
+    margin: 0 auto;
+    width: 75%;
+    list-style: none;
+    padding-left: 10px;
+}
+
+li {
+    list-style-type: none;
+    margin-left: -1vw;
+}
+
+.item-file {
+    width: 20px;
+    height: 20px;
+}
+
+.file-icon {
+    width: auto;
+    height: 20px;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
