@@ -5,12 +5,26 @@
             {
                 "name": "Constant Expressions: A Method of Hiding Malicious Data at Compile Time",
                 "author": "Conner Macolley",
-                "path": "constant-expressions/constant-expressions.html"
+                "path": "constant-expressions/constant-expressions.html",
+                "date": "~"
             }, 
             {
                 "name": "WMI Based Persistence Mechanisms for Malicious C++ Applications",
                 "author": "Conner Macolley",
-                "path": "wmi-persistence/wmi-persistence.html"
+                "path": "wmi-persistence/wmi-persistence.html",
+                "date": "~"
+            }, 
+            {
+                "name": "Apophis Ransomware [In Development]",
+                "author":"Conner Macolley",
+                "path": ".",
+                "date": "~"
+            },
+            {
+                "name": "Manual Loading Functions and Libraries for EDR/AV Bypass",
+                "author":"Conner Macolley",
+                "date": "~",
+                "path": "fn-res/loader.html"
             }
         ]
     }

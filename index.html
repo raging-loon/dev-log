@@ -9,68 +9,35 @@
 
     </head>
 
-    <body class="main-page bg-secondary">
+    <body class="main-page">
         <div class="container-fluid text-center text-white bg-dark p-4 mb-3">
             <h1>Development Blog</h1>
         </div>
         
-        <div class="file-list container text-black">
-            <details>
-                <summary >Malware Development</summary>
-                <div class="directory-content">
-                    <ul>
-                        <li>
-                            <span><img src="images/file.png" class="file-icon"></span>
-                            <span >
-                                <a href="html/articles/malware-dev/constant-expressions/constant-expressions.html">
-                                    Constant Expressions: A Method of Hiding Malicious Data at Compile Time
-                                </a>
-                            </span>
-                        </li>
-                        <li>
-                            <span><img src="images/file.png" class="file-icon"></span>
-                            <span >
-                                <a href="html/articles/malware-dev/wmi-persistence/wmi-persistence.html">
-                                    WMI Based Persistence Mechanisms for Malicious C++ Applications 
-                                </a>
-                            </span>
-                        </li>
-                        <li>
-                            <span><img src="images/file.png" class="file-icon"></span>
-                            <span >
-                                <a href=".">
-                                    Apophis Ransomware [In Development]
-                                </a>
-                            </span>
-                        </li>
-                        <li>
-                            <span><img src="images/file.png" class="file-icon"></span>
-                            <span >
-                                <a href="html/articles/malware-dev/fn-res/loader.html">
-                                    Manual Loading Functions and Libraries for EDR/AV Bypass
-                                </a>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-            </details>
-            <details>
-                <summary >Malware Analysis</summary>
-                <div class="directory-content">
-                    <p>Nothing here yet!</p>
-                </div>
-            </details>
-            <details>
-                <summary>Software Development</summary>
-                <div class="directory-content">
-                    <p>Nothing here yet!</p>
-                    <details>
-                        <summary>Software Development</summary>
-                        <p>Nothing here yet!</p>
-                    </details>
-                </div>
-       
-            </details>
+        <div class="file-list container text-black" id="file-manager">
+            <table class="table table-borderless">
+                <tbody id="directories">
+                 
+                </tbody>
+            </table>    
+            
         </div>
     </body>
+
+    <script src="js/filemgr2.js"></script>
+    <script>
+        build_library();
+    </script>
+    <style>
+        table {
+            margin-bottom: 0 px !important;
+            padding: 0 !important;
+        }
+        td ,tr{
+            padding: 0 !important;
+            
+            padding-top: 0 px !important;
+            padding-bottom: 0 px !important;
+        }
+    </style>
 </html>
